@@ -53,6 +53,59 @@ $('.dropdown').click(function(event) {
     $('.dropdown-open').slideToggle();
   });
 
+
+$('.open').click(function(event) {
+  $('.box5').delay().slideDown();
+  $('.box6').delay().slideDown();
+  $('.box7').delay().slideDown();
+});
+
+
+//字體縮放
+$('.font-b').click(function(event) {
+ event.preventDefault();
+ $('.content p').css('font-size','20px');
+});
+//字體縮放
+$('.font-m').click(function(event) {
+ event.preventDefault();
+ $('.content p').css('font-size','16px');
+});
+//字體縮放
+$('.font-s').click(function(event) {
+ event.preventDefault();
+ $('.content p').css('font-size','13px');
+});
+
+$('.ad-close').click(function(event) {
+   $('.ad').fadeOut();
+});
+
+
+
+$('.box').hover(function() {
+  $(this).addClass('box animated hinge');
+}, function() {
+  /* Stuff to do when the mouse leaves the element */
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });	
 
 
